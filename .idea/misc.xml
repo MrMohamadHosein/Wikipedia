@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/drawable/ic_exit.xml" value="0.1824074074074074" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/drawable/ic_explore.xml" value="0.18425925925925926" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/drawable/ic_video_maker.xml" value="0.18425925925925926" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/drawable/ic_wikipedia.xml" value="0.18425925925925926" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/drawable/ic_wikipedia_detail.xml" value="0.1824074074074074" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/drawable/ic_wikipedia_icon.xml" value="0.18425925925925926" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/drawable/ic_writer.xml" value="0.18425925925925926" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/drawable/shape_circle.xml" value="0.18425925925925926" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/activity_main.xml" value="0.17" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/activity_main2.xml" value="0.5" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/activity_main3.xml" value="0.25" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/fragment_explore.xml" value="0.2" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/fragment_photographer.xml" value="0.25" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/fragment_profile.xml" value="0.15800330033003301" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/fragment_test.xml" value="0.1790556334735858" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/fragment_trend.xml" value="0.6" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/header_main.xml" value="0.67" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/item_card.xml" value="0.4" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/item_explore.xml" value="0.1" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/item_test.xml" value="0.3842443729903537" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/layout/item_trend.xml" value="1.1" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.18489583333333334" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/menu/menu_main.xml" value="0.22" />
+        <entry key="..\:/Coding/Android/Dore/Wikipedia/app/src/main/res/menu/menu_navigation_drawer.xml" value="0.19947916666666668" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/drawable/circle.xml" value="0.2" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/drawable/heart.xml" value="0.199" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/drawable/ic_letter.xml" value="0.277" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/drawable/ic_mark_question.xml" value="0.277" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/drawable/ic_share.xml" value="0.277" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/drawable/ic_user_block.xml" value="0.277" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/drawable/ripple.xml" value="0.2" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/drawable/round_outline.xml" value="0.277" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/drawable/shape_circle.xml" value="0.277" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/layout/activity_main2.xml" value="0.17395833333333333" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/layout/fragment_explore.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/layout/fragment_profile.xml" value="0.3931888544891641" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/layout/item_explore.xml" value="0.17395833333333333" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/layout/item_trend.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kotlin Code/yaghoot10/20. create menu (Full Project)/Wikipedia/app/src/main/res/layout/story_item_layout.xml" value="0.67" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_gravity="left|center"
+            android:scaleType="fitXY"
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="left|center"
+                android:scaleType="fitXY"
+                android:src="@drawable/mhk_pic"
+                android:layout_centerInParent="true"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+
+            <com.devlomi.circularstatusview.CircularStatusView
+                android:id="@+id/img_profile_main"
+                android:layout_gravity="left|center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/mhk_pic"
+                app:portion_color="@color/purple"
+                app:portion_spacing="4dp"
+                app:portion_width="2dp"
+                app:portions_count="7" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#222f61"
+                android:id="@+id/txt_profile_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mhk_full_name"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/item_rating_main"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:progressTint="@color/yellow"
+                android:rating="3.5"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gray_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/line_view_1">
+
+        <TextView
+            android:textColor="#5d6a97"
+            android:id="@+id/txt_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bout"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:id="@+id/txt_about_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/about_dec_mhk"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gray_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_2" />
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/line_view_2">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:background="@color/verylightgreen"
+                android:id="@+id/img_share_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_share"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/txt_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Share\nProfile"
+                android:gravity="center"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:background="@color/verylightgray"
+                android:id="@+id/img_ask_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_mark_question"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/txt_ask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ask a\nQuestion"
+                android:gravity="center"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:background="@color/verylightpurple"
+                android:id="@+id/img_sendMessage_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_letter"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/txt_sendMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Send a\nMessage"
+                android:gravity="center"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:background="@color/verylightorange"
+                android:id="@+id/img_blockUser_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_user_block"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/txt_blockUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Block\nUser"
+                android:gravity="center"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line_view_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gray_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_3" />
+
+
+
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_margin="16dp"
+        android:id="@+id/horizontal_scroll_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/line_view_3">
+        <LinearLayout
+            android:layout_gravity="left"
+            android:id="@+id/layout3"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:layout_marginEnd="4dp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hsi" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:layout_marginEnd="4dp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hs2" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:layout_marginEnd="4dp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hsi3" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+
+    <View
+        android:id="@+id/line_view_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gray_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_scroll_view1" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:id="@+id/linearLayout_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/line_view_4">
+
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#5d6a97"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mutual Friends"
+            android:textSize="20sp" />
+
+        <TextView
+            android:gravity="end"
+            android:layout_weight="1"
+            android:textColor="@color/purple_light"
+            android:id="@+id/txt_see_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:id="@+id/horizontal_scroll_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_5">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_5">
+
+    <LinearLayout
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/p1"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sarah"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginEnd="16dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/p2"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Henry"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginEnd="16dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/p3"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alexander"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginEnd="16dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/p4"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owen J."
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold
+"/>
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+        android:layout_marginEnd="16dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/p5"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maria"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold
+"/>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginEnd="16dp"
+
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/p6"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peter"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textStyle="bold
+"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginEnd="16dp"
+
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/p7"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xhiah"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textStyle="bold
+"/>
+
+
+        </LinearLayout>
+
+</LinearLayout>
+    </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
